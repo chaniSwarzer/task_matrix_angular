@@ -1,0 +1,18 @@
+<div class="col-12 col-sm-6 float-right m-0 pb-3">
+  <div class="card border-info">
+    <div class="card-header">
+      <img src="../../assets/img_avatar.png" class="rounded-circle mr-3" height="50px" width="50px" >
+
+      {{hero.name}}
+    </div>
+    <div class="card-body text-info">
+
+      <p class="card-text">start at {{hero.date | date}}</p>
+      <p class="card-text">starting Power :{{hero.startingPower.toFixed(3)}}</p>
+      <p class="card-text">Current Power :{{hero.currentPower.toFixed(3)}}</p>
+      <p class="card-text">Suit color <input class="form-control" #ignoredInput [style.background]="hero.suit" /></p>
+      <p class="card-text">Ability {{hero.abilityDescription}}</p>
+     
+    </div>
+  </div>
+</div>

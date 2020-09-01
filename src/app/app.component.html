@@ -1,0 +1,14 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="trainer">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/heroes" routerLinkActive="active">heroes</a>
+        <a class="nav-item nav-link" style="float: right;" (click)="logout()"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': trainer }">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
+
